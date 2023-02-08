@@ -1,0 +1,27 @@
+#!/bin/bash
+
+HTTP_CODE=$(
+curl  https://phc.prontonetworks.com/cgi-bin/authlogin?URI=http://www.msftconnecttest.com/redirect \
+  -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' \
+  -H 'Accept-Language: en-US,en;q=0.9' \
+  -H 'Cache-Control: max-age=0' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -H 'Cookie: initialTrafficSource=utmcsr=(direct)|utmcmd=(none)|utmccn=(not set); _gid=GA1.2.811807676.1675697236; _lfa=LF1.1.5e1aa03ed3a4fce6.1675697577394; _ga=GA1.1.449387894.1675697236; _ga_H86JN5D10V=GS1.1.1675697235.1.1.1675699321.0.0.0; _ga_MZLP6C1YKB=GS1.1.1675697235.1.1.1675699321.0.0.0; _ga_S2ZFRTKW03=GS1.1.1675697638.1.1.1675699321.0.0.0' \
+  -H 'Origin: https://phc.prontonetworks.com' \
+  -H 'Referer: https://phc.prontonetworks.com/cgi-bin/authlogin?URI=http://prontonetworks.com/&URI=http://www.gstatic.com/generate_204' \
+  -H 'Sec-Fetch-Dest: document' \
+  -H 'Sec-Fetch-Mode: navigate' \
+  -H 'Sec-Fetch-Site: same-origin' \
+  -H 'Sec-Fetch-User: ?1' \
+  -H 'Upgrade-Insecure-Requests: 1' \
+  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36' \
+  -H 'sec-ch-ua: "Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Linux"' \
+  --data-raw 'userId=20BCE0371&password=R3GCMX&serviceName=ProntoAuthentication&Submit22=Login' \
+  --compressed \
+  --insecure
+  )
+ 
+
